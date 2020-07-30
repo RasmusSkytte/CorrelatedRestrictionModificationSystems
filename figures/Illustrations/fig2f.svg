@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="fig2f.svg"
-   inkscape:export-filename="C:\Users\Rasmus Eriksen\Dropbox\Rasmus\Universitet\PhD\Bacteria Phage\RM systems\Correlated Cost and Imperfection\figures\Illustrations\fig2f.png"
+   inkscape:export-filename="C:\Users\Rasmus Eriksen\Dropbox\Rasmus\Universitet\PhD\Bacteria Phage\RM systems\Article\Correlated Cost and Imperfection\figures\Illustrations\fig2f.png"
    inkscape:export-xdpi="230.78"
    inkscape:export-ydpi="230.78">
   <defs
@@ -242,7 +242,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="348.43293"
+     inkscape:cx="184.56094"
      inkscape:cy="132.64936"
      inkscape:document-units="mm"
      inkscape:current-layer="g3606"
@@ -250,7 +250,7 @@
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
-     inkscape:window-y="1341"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      showguides="true">
     <inkscape:grid
@@ -396,25 +396,25 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:5.29166651px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="23.695004"
+         x="22.107502"
          y="279.17319"
          id="text1128"><tspan
            sodipodi:role="line"
            id="tspan1126"
-           x="23.695004"
+           x="22.107502"
            y="279.17319"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#000000;stroke-width:0.26458332">P(γ,ω)</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#000000;stroke-width:0.26458332">Pr(γ,ω)</tspan></text>
       <text
          id="text1145"
          y="279.17319"
-         x="93.653183"
+         x="92.065681"
          style="font-style:normal;font-weight:normal;font-size:5.29166651px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#000000;stroke-width:0.26458332"
            y="279.17319"
-           x="93.653183"
+           x="92.065681"
            id="tspan1143"
-           sodipodi:role="line">P(γ,ω)</tspan></text>
+           sodipodi:role="line">Pr(γ,ω)</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:5.29166651px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none"
@@ -476,14 +476,14 @@
       <text
          id="text1151"
          y="279.17319"
-         x="163.73714"
+         x="162.14966"
          style="font-style:normal;font-weight:normal;font-size:5.29166651px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#000000;stroke-width:0.26458332"
            y="279.17319"
-           x="163.73714"
+           x="162.14966"
            id="tspan1149"
-           sodipodi:role="line">P(γ,ω)</tspan></text>
+           sodipodi:role="line">Pr(γ,ω)</tspan></text>
       <path
          style="fill:none;stroke:#ff0000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 180.30425,290.55834 0.13467,-13.55846 c 0,-2.81471 4.17485,-5.16099 10.15458,-7.09052"
