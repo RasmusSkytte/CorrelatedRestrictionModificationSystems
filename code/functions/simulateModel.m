@@ -145,23 +145,8 @@ for i = 1:iterations
     
     % Plot progress
     if ~isempty(pD)
-        
-%         if useODE
-            pD.XData = [pD.XData i];
-            pD.YData = [pD.YData D_end / beta];
-            
-%         else
-%             dist = sum(omega ./ (gamma * (1 - BB / C) - alpha));
-%             UB = (beta * (1 + sum(omega)) + sum(gamma) * (1 - BB / C) * dist) / (1 + sum(omega) + alpha * dist);
-%             LB = (sum(gamma) * (1 - BB / C) * dist) / (1 + sum(omega) + alpha * dist);
-
-%             pD.XData = [pD.XData i];
-%             pD.YData = [pD.YData D_end / beta];
-%             pD.YPositiveDelta = [pD.YPositiveDelta abs(UB - D_end) / beta];
-%             pD.YNegativeDelta = [pD.YNegativeDelta abs(LB - D_end) / beta];
-%             
-%         end
-        
+        pD.XData = [pD.XData i];
+        pD.YData = [pD.YData D_end / beta];
     end
     
     if ~isempty(pB)
