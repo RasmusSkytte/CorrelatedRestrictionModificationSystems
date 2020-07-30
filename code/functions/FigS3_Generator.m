@@ -26,10 +26,10 @@ rng(60);
 sname = sprintf('../data/FigS3/run_%d.mat', k);
 
 % Simulate the model
-[B_end, P_end, D_end] = simulateModel(Alpha, Beta, Eta, Delta, C, T, avgRM, f, lb, ub, 10*M(k), M(k), [], [], [], sname);
+[B_end, P_end, D_end] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, avgRM, f, lb, ub, 10*M(k), M(k), [], [], [], sname);
 N = M(k);
 
 % Save the data
-save(sname, 'B_end', 'P_end', 'D_end', 'Alpha', 'Beta', 'Delta', 'Eta', 'C', 'N');
+save(sname, 'B_end', 'P_end', 'D_end', 'Alpha', 'Beta', 'Delta', 'Eta', 'C', 'threshold', 'N');
 
 end

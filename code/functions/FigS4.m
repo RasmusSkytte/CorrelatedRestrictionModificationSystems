@@ -113,7 +113,7 @@ h_B = plot(ax1, nan, nan, 'k', 'LineWidth', 1.5, 'DisplayName', 'B/C');
 h_P = plot(ax1, nan, nan, 'r', 'LineWidth', 1.5, 'DisplayName', 'P/(10*C)');
 
 % Run the map
-[B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, T, avgRM, f, lb, ub, iterations, inf, h_D, h_B, h_P, [], 'SS');
+[B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, avgRM, f, lb, ub, iterations, inf, h_D, h_B, h_P, [], 'SS');
 
 % Update plots
 s_p.XData = gamma_0;

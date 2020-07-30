@@ -179,12 +179,12 @@ for j = 1:2
         end
 
         % Simulate the model
-        [B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, T, avgRM, f, lb, ub, iterations, inf, pD, pB, pP, sname);
+        [B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, avgRM, f, lb, ub, iterations, inf, pD, pB, pP, sname);
 
         pP.YData = pP.YData/10;
 
         % Save data
-        save(sname, 'B_end', 'P_end', 'D_end', 'bacteria', 'phages', 'diversity', 'gamma', 'omega', 'gamma_0', 'omega_0', 'Alpha', 'Beta', 'Delta', 'Eta', 'C', 'T', 'avgRM', 'f', 'lb', 'ub')
+        save(sname, 'B_end', 'P_end', 'D_end', 'bacteria', 'phages', 'diversity', 'gamma', 'omega', 'gamma_0', 'omega_0', 'Alpha', 'Beta', 'Delta', 'Eta', 'C', 'threshold', 'T', 'avgRM', 'f', 'lb', 'ub')
 
     end
 

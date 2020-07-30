@@ -54,7 +54,7 @@ for i = 1:2
         
         try
             % Run the map
-            [B_end, P_end, DD] = simulateModel(Alpha, Beta, Eta, Delta, C, T, avgRM, f, lb, ub, iterations, inf, [], [], [], [], 'SS');
+            [B_end, P_end, DD] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, avgRM, f, lb, ub, iterations, inf, [], [], [], [], 'SS');
             
             % Store outputs
             D = [D DD];
@@ -66,7 +66,7 @@ for i = 1:2
     end
     
     % Store the values
-    save(sprintf('../data/Fig4/%s/alpha_%.2f_beta_%d_delta_1e%.3f_eta_1e%.2f.mat',       str, Alpha, Beta, log10(Delta), log10(Eta)), 'B', 'P', 'D', 'Alpha', 'Beta', 'Delta', 'Eta', 'C')
+    save(sprintf('../data/Fig4/%s/alpha_%.2f_beta_%d_delta_1e%.3f_eta_1e%.2f.mat',       str, Alpha, Beta, log10(Delta), log10(Eta)), 'B', 'P', 'D', 'Alpha', 'Beta', 'Delta', 'Eta', 'C', 'threshold')
 
 end
 

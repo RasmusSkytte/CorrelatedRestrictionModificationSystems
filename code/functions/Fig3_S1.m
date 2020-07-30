@@ -83,7 +83,7 @@ for r = 0.3/k:0.3/k:0.3
     rng(60);
        
     % Run the map
-    [B_end, P_end, DD, ~, ~, ~, ~, ~, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, T, avgRM, r, lb, ub, iterations, inf, [], [], [], [], 'SS');
+    [B_end, P_end, DD, ~, ~, ~, ~, ~, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, avgRM, r, lb, ub, iterations, inf, [], [], [], [], 'SS');
     
     % Store correlation coefficient
     corr_coeff(round(r*50/0.3)) =  corr(gamma_0, omega_0);
@@ -157,7 +157,7 @@ for r = 0:1/(k-1):(k-1)/k
     rng(60);
        
     % Run the map
-    [B_end, P_end, DD, ~, ~, ~, ~, ~, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, T, -r, f, lb, ub, iterations, inf, [], [], [], [], 'SS');
+    [B_end, P_end, DD, ~, ~, ~, ~, ~, gamma_0, omega_0] = simulateModel(Alpha, Beta, Eta, Delta, C, threshold, T, -r, f, lb, ub, iterations, inf, [], [], [], [], 'SS');
     
     % Store marginal means
     mean_gamma(round(r*(k-1)+1)) =  mean(gamma_0);

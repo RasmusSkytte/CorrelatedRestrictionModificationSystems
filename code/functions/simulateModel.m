@@ -1,4 +1,4 @@
-function [B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(alpha, beta, eta, delta, C, T, avgRM, f, lb, ub, iterations, N, pD, pB, pP, sname, varargin)
+function [B_end, P_end, D_end, bacteria, phages, diversity, gamma, omega, gamma_0, omega_0] = simulateModel(alpha, beta, eta, delta, C, threshold, T, avgRM, f, lb, ub, iterations, N, pD, pB, pP, sname, varargin)
 
 % Determine solver
 if numel(varargin) == 1 && strcmpi(varargin{1}, 'SS')
@@ -35,7 +35,7 @@ PP = 0;
 for i = 1:iterations
     
     % Generate new species
-        if i <= iterations
+    if i <= iterations
         
         % Check if the sytems is limited
         if N < inf
@@ -120,7 +120,7 @@ for i = 1:iterations
     end
     
     % Apply threshold of survival
-    I = B_end > 1;
+    I = B_end > threshold;
     
     % Ignore species below threshold
     B_end(~I) = [];
@@ -163,6 +163,6 @@ for i = 1:iterations
     drawnow;
 
     if mod(i, 100) == 0 && ~isempty(sname)
-        save(sname, 'bacteria', 'phages', 'diversity', 'gamma', 'omega', 'gamma_0', 'omega_0', 'C', 'alpha', 'beta', 'eta', 'delta', 'C', 'T', 'avgRM', 'f', 'lb', 'ub', 'iterations')
+        save(sname, 'bacteria', 'phages', 'diversity', 'gamma', 'omega', 'gamma_0', 'omega_0', 'alpha', 'beta', 'eta', 'delta', 'C', 'threshold', 'T', 'avgRM', 'f', 'lb', 'ub', 'iterations')
     end
 end
